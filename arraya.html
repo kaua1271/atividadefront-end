@@ -1,0 +1,27 @@
+<script>
+let media = 0;
+let aux;
+let valor = parseInt(prompt());
+let lista = new Array(valor);
+console.log(lista);
+
+for(let i = 0; i < lista.length; i++){
+    aux = parseInt(prompt());
+    lista[i] = aux;
+}
+console.log(lista);
+for(let i = 0; i < lista.length; i++){
+media += lista[i]   
+}
+media = media/lista.length;
+console.log(media);
+if(media >= 7){
+    console.log("aluno Aprovado");
+}
+else if(media >= 5 && media <= 6.99){
+    console.log("Recuperacao");
+}
+else{
+    console.log("aluno Reprovado");
+}
+</script>
