@@ -1,0 +1,17 @@
+header img{
+    height: 99px;
+}
+#secao-banners img{
+    height: 500px;
+}
+#secao-banners h2{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.card{
+    margin: 10px;
+}
+#secao-produtos h2{
+    text-align: center;
+}
