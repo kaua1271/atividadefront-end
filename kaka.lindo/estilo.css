@@ -13,7 +13,11 @@
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
- 
+#secao-produtos{
+    margin-top: 60px ;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
 .card{
     margin: 10px;
     text-align: center;
@@ -54,7 +58,7 @@
     color: white;
 }
 .rodape-direitos{
-    width: calc(100% - 20px);
+    width: 100%;
     background-color: black;
     padding: 10px;
     margin: 0px;
@@ -70,3 +74,4 @@
         padding: 60px 0px 40px 0px;
     }
 }
+
