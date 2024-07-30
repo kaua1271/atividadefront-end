@@ -1,0 +1,11 @@
+header img{
+    height: 300 x 84px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
