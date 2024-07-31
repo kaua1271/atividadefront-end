@@ -1,11 +1,29 @@
 header img{
-    height: 300 x 84px;
+    height: 84.90px;
 }
 header{
     display: flex;
     justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 ul{
     display: flex;
-    justify-content: space-evenly;
+    list-style-type: none;
+}
+li{
+    padding: 12px;
+    font-family: 'inconsolata';
+    display: block;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 12px;
 }
