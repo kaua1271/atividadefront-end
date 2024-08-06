@@ -27,6 +27,30 @@ a{
     color: black;
     padding: 12px;
 }
+.slider{
+    width: 491px;
+    margin: auto;
+   
+}  
+.slider li{
+    list-style: none;
+    position: absolute;
+    flex-direction: column;
+
+}
+.slider img{
+    margin: auto;
+    vertical-align: auto;
+}
+.nav-button img{
+    width: 491px;
+    height: 100px;
+    list-style: none;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 
 
