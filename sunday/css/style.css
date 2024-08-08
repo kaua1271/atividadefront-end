@@ -1,0 +1,85 @@
+* {
+    box-sizing:border-box; /*Definindo como as dimensões estão sendo caluculadas*/
+    margin: 0%; /*definindo espaço ao redor do elemento*/
+    padding: 0%; /*define o espaço interno ao redor doconteúdo do elemento*/
+}
+header img{
+    padding: 0%;
+    height: 84.90px; /*define a altura de um elemento*/
+    margin: 20px;
+    margin-top: 0px;
+}
+header{
+    display: flex; /*define o modelo de layout flexbox a um elemento*/
+    justify-content: center; /*serve para alinhar itens ao longo do eixo principal  do contêiner flexível. */
+    margin: 10px;
+    padding: 20px;
+}
+nav{
+    display: flex; 
+    flex-direction: column; /*define a direção principal do contêiner flexível como vertical*/
+    align-items: center; /*alinhar os itens flexíveis ao longo do eixo transversal do contêiner flexível*/
+}
+ul{
+    display: flex;
+    list-style-type: none; /*Remove as bolinhas padrão que aparecem em listas não ordenadas*/
+}
+li{
+    padding: 0px;
+    font-family: 'inconsolata'; /*Define a fonte dos itens da lista como 'Inconsolata', uma fonte monoespaçada*/
+    display: block; /*Garante que cada <li> seja tratado como um elemento de bloco, ocupando toda a largura disponível*/
+    font-size: 12px; /*Define o tamanho da fonte para 12px*/
+}
+a{
+    text-decoration: none; /*Remove a sublinha padrão dos links*/
+    color: black; /*Define a cor do texto do link como preto*/
+    padding: 12px;
+}
+.slideshow-container { /* Contêiner de apresentação de slides */
+    max-width: 100%; /* A largura máxima do contêiner será 100% da largura do elemento pai, garantindo que o slideshow se ajuste ao tamanho da tela */
+    position: relative; /* Define o contêiner como um elemento posicionado, necessário para posicionar os botões de navegação (.prev e .next) */
+    margin: auto; /* Centraliza o contêiner dentro do elemento pai */
+    height: 620px; /* Define uma altura fixa para o contêiner de slides */
+}
+
+.mySlides {
+    display: none; /* Inicialmente, todos os slides estão ocultos */
+    width: 100%; /* Cada slide ocupa 100% da largura do contêiner */
+    height: 100%; /* Cada slide ocupa 100% da altura do contêiner */
+}
+
+.mySlides img {
+    width: 100%; /* A imagem dentro de cada slide ocupa 100% da largura do slide */
+    height: 100%; /* A imagem dentro de cada slide ocupa 100% da altura do slide */
+    object-fit: cover; /* A imagem é redimensionada para cobrir totalmente o slide, cortando as partes que não cabem, se necessário */
+}
+
+.prev, .next { /* Botões de navegação */
+    cursor: pointer; /* O cursor muda para indicar que o elemento é clicável */
+    position: absolute; /* Os botões são posicionados de forma absoluta em relação ao contêiner pai (.slideshow-container) */
+    top: 50%; /* Posiciona os botões verticalmente no meio do contêiner */
+    width: auto; /* Define a largura dos botões com base no conteúdo interno */
+    margin-top: -22px; /* Ajusta a posição vertical dos botões, centralizando-os em relação à altura do botão */
+    padding: 16px; /* Adiciona preenchimento interno para aumentar a área clicável */
+    color: white; /* Define a cor do texto como branco */
+    font-weight: bold; /* O texto dos botões é negrito */
+    font-size: 18px; /* Define o tamanho da fonte do texto dos botões */
+    transition: 0.6s ease; /* Adiciona uma transição suave de 0.6 segundos para qualquer alteração visual nos botões */
+    border-radius: 0 3px 3px 0; /* Adiciona bordas arredondadas ao lado direito dos botões */
+    user-select: none; /* Impede que o texto dos botões seja selecionado pelo usuário */
+}
+
+.next { /* Especificamente para o botão "próximo" */
+    right: 0; /* Posiciona o botão na borda direita do contêiner */
+    border-radius: 3px 0 0 3px; /* Ajusta o arredondamento das bordas para o botão "próximo" */
+}
+
+.fade { /* Classe para aplicar o efeito de fade nos slides */
+    animation-name: fade; /* Especifica o nome da animação */
+    animation-duration: 1.5s; /* Define a duração da animação para 1.5 segundos */
+}
+
+@keyframes fade {
+    from {opacity: .4;} /* O slide começa com 40% de opacidade */
+    to {opacity: 1;} /* O slide termina com 100% de opacidade */
+}
