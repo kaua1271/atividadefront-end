@@ -6,14 +6,14 @@
 header img{
     padding: 0%;
     height: 84.90px; /*define a altura de um elemento*/
-    margin: 20px;
+    margin: 22px;
     margin-top: 0px;
 }
 header{
     display: flex; /*define o modelo de layout flexbox a um elemento*/
     justify-content: center; /*serve para alinhar itens ao longo do eixo principal  do contêiner flexível. */
-    margin: 10px;
-    padding: 20px;
+    margin: 12px;
+    padding: 15px;
 }
 nav{
     display: flex; 
@@ -23,12 +23,14 @@ nav{
 ul{
     display: flex;
     list-style-type: none; /*Remove as bolinhas padrão que aparecem em listas não ordenadas*/
+    margin: 0%;
 }
 li{
     padding: 0px;
     font-family: 'inconsolata'; /*Define a fonte dos itens da lista como 'Inconsolata', uma fonte monoespaçada*/
     display: block; /*Garante que cada <li> seja tratado como um elemento de bloco, ocupando toda a largura disponível*/
-    font-size: 12px; /*Define o tamanho da fonte para 12px*/
+    font-size: 12.4px; /*Define o tamanho da fonte para 12px*/
+
 }
 a{
     text-decoration: none; /*Remove a sublinha padrão dos links*/
@@ -82,4 +84,15 @@ a{
 @keyframes fade {
     from {opacity: .4;} /* O slide começa com 40% de opacidade */
     to {opacity: 1;} /* O slide termina com 100% de opacidade */
+}
+
+
+.final-container{
+    text-align: center;
+    margin-top: 0px 0px -1px;
+    padding: 75px;
+}
+h2{
+    font-size: 2.7rem;
+    font-weight: 100;
 }
